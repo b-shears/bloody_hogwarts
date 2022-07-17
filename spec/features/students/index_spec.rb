@@ -15,16 +15,16 @@ RSpec.describe "Students" do
       expect(page).to have_content("House: Griffindor")
     end
 
-    within "#students-#{harry.id}" do
+    within "#students-#{draco.id}" do
       expect(page).to have_content("Name: Draco Malfoy")
       expect(page).to have_content("Age: 14")
       expect(page).to have_content("House: Slytherin")
     end
 
     within "#students-#{ron.id}" do
-      expect(page).to have_content("Name: 'Ron Weasley")
+      expect(page).to have_content("Name: Ron Weasley")
       expect(page).to have_content("Age: 15")
       expect(page).to have_content("House: Griffindor")
     end
     end
-  end
+end
